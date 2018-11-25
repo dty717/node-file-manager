@@ -17,7 +17,7 @@ So, I will remove the angularjs.
 Or
 
 ```sh
-  git clone https://github.com/efeiefei/node-file-manager.git
+  git clone https://github.com/dty717/node-file-manager.git
   cd node-file-manager
   npm i
   cd lib
