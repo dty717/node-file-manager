@@ -20,7 +20,7 @@
   </style>
 </head>
 
-<body ng-controller="FileManagerCtr as FM">
+<body ng-controller="FileManagerCtr as FM" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
   <div class="modal fade" id="createFolderModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -171,6 +171,7 @@
     </div>
 
   </div>
+  <script src="js/common-use.js"></script>
 
 </body>
 </html>
