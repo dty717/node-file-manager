@@ -1,6 +1,12 @@
 # Screen Shot
 ![screenshot](https://raw.githubusercontent.com/efeiefei/node-file-manager/master/example/screenshot.png)
 
+# What I will do(by forker dty717)
+This project remind me using node is the fastest way to set up a web site of managing the file system.
+There is one thing I don't agree with, that is angularjs, for its speed is quite quick enough and I am not familiar with it.
+So, I will remove the angularjs.
+
+
 # Usage
 
 ```sh
