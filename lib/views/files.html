@@ -40,9 +40,12 @@
         qr.make();
         console.log('%c                    ', 'font-size: 100px; background: url('+qr.createDataURL()+') no-repeat;');
         function test_connect() {
-            //var url="http://"+window.location.hostname+":8080";
-            var url="http://192.168.2.101:8080";
-            //var url="http://localhost:8080"
+            var url=localStorage.getItem("localhost");
+            if(url==undefined||(url=="")){
+                url="http://192.168.2.101:8080";
+                //url="http://"+window.location.hostname+":8080";
+                //url="http://localhost:8080"                
+            }
             var socket = new SockJS(url+'/gs-guide-websocket');
             stompClient = Stomp.over(socket);
             stompClient.connect({}, function (frame) {
